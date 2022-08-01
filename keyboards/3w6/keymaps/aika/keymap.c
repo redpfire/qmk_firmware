@@ -1,30 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "aika.h"
 
-enum combo_events {
-    NUM_LAYER,
-    NUM_LAYER_SYM,
-    VIM_LAYER,
-    VIM_LAYER_SYM,
-    KEYLOCK_CAPS,
-    COMBO_LENGTH
-};
-uint16_t COMBO_LEN = COMBO_LENGTH;
-
-const uint16_t PROGMEM numbers_combo[] = {KC_H, KC_COMMA, COMBO_END};
-const uint16_t PROGMEM numbers_combo_sym[] = {KC_AMPR, KC_CIRC, COMBO_END};
-const uint16_t PROGMEM vim_combo[] = {KC_H, KC_COMMA, KC_DOT, COMBO_END};
-const uint16_t PROGMEM vim_combo_sym[] = {KC_AMPR, KC_CIRC, KC_TILD, COMBO_END};
-const uint16_t PROGMEM keylock_combo[] = {KC_X, KC_C, KC_D, COMBO_END};
-
-combo_t key_combos[] = {
-    [NUM_LAYER] = COMBO(numbers_combo, TO(3)),
-    [NUM_LAYER_SYM] = COMBO(numbers_combo_sym, TO(3)),
-    [VIM_LAYER] = COMBO(vim_combo_sym, TO(4)),
-    [VIM_LAYER_SYM] = COMBO(vim_combo, TO(4)),
-    [KEYLOCK_CAPS] = COMBO(keylock_combo, KC_CAPS),
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(KC_Q, KC_W, KC_F, KC_P, KC_B, KC_J, KC_L, KC_U, KC_Y, KC_MINS,
                  LALT_T(KC_A), RALT_T(KC_R), LSFT_T(KC_S), LCTL_T(KC_T), KC_G,
