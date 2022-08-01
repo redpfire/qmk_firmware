@@ -1,3 +1,5 @@
+// Copyright 2022 Piotr Szczurkowski (@redpfire)
+// SPDX-License-Identifier: GPL-2.0-or-later
 #include "aika.h"
 #ifdef OLED_ENABLE
     #include "oled.h"

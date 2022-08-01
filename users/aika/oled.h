@@ -1,3 +1,5 @@
+// Copyright 2022 Piotr Szczurkowski (@redpfire)
+// SPDX-License-Identifier: GPL-2.0-or-later
 #pragma once
 
 #define IDLE_FRAMES 5

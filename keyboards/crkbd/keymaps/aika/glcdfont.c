@@ -1,3 +1,5 @@
+// Copyright 2022 Piotr Szczurkowski (@redpfire)
+// SPDX-License-Identifier: GPL-2.0-or-later
 #include "progmem.h"
 
 // Corne 8x6 font with QMK Firmware Logo
