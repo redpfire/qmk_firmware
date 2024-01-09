@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "rev3.h"
+#include "quantum.h"
 
 #ifdef SWAP_HANDS_ENABLE
 __attribute__ ((weak))
@@ -31,4 +31,3 @@ const keypos_t PROGMEM hand_swap_config[MATRIX_ROWS][MATRIX_COLS] = {
     {{4, 3}, {3, 3}, {2, 3}, {1, 3}, {0, 3}}
 };
 #endif
-

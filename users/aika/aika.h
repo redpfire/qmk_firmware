@@ -12,13 +12,7 @@ enum layers {
     _VIM,
 };
 
-enum custom_keycodes {
-    VIM_CW = SAFE_RANGE,
-    VIM_FMT,
-    VIM_QAE,
-};
-
-enum combo_events {
+enum combos {
     NUM_LAYER,
     NUM_LAYER_SYM,
     VIM_LAYER,
@@ -27,4 +21,4 @@ enum combo_events {
     COMBO_LENGTH
 };
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record);
+extern combo_t key_combos[COMBO_LENGTH];
