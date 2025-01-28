@@ -24,30 +24,9 @@
 enum layers {
     _BASE,
     _SYMBOLS,
+    _NUM,
     _NAVIGATION,
     _FUN,
-    _VIM,
-};
-
-enum combos {
-    NUM_LAYER_COMBO,
-    VIM_LAYER_COMBO,
-    FUN_LAYER_COMBO,
-    NAV_LAYER_COMBO,
-
-    OSL_NUM_LAYER_COMBO,
-    OSL_VIM_LAYER_COMBO,
-    OSL_FUN_LAYER_COMBO,
-    OSL_NAV_LAYER_COMBO,
-
-    DOUBLEQ_COMBO,
-    SINGLEQ_COMBO,
-    DEL_COMBO,
-    CAPSWORD_COMBO,
-    HOME_COMBO,
-    END_COMBO,
-
-    COMBO_LENGTH
 };
 
 enum tapdances {
@@ -57,7 +36,6 @@ enum tapdances {
   TD_EQUAL,
   TD_MINUS,
   TD_COMMA,
-  TD_DOT,
   TD_SLASH,
   TD_GRAVE,
   TD_BRACES,
@@ -65,10 +43,8 @@ enum tapdances {
   TAPDANCE_LENGTH
 };
 
-extern combo_t key_combos[COMBO_LENGTH];
 extern tap_dance_action_t tap_dance_actions[TAPDANCE_LENGTH];
 bool get_permissive_hold(uint16_t keycode, keyrecord_t *record);
-uint16_t get_combo_term(uint16_t index, combo_t *combo);
 bool caps_word_press_user(uint16_t keycode);
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record);
 
